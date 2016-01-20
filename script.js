@@ -4,6 +4,13 @@ angular.module('buttonClicks')
     .controller('buttonClicksController', ['$scope', 
         function($scope){ 
             $scope.displayMessage = function(){
-                $scope.displayMessage = 'Thanks for clicking!'  
+                $scope.Message = 'Thanks for clicking!';
+                console.log($scope.Message);
+        }
+            
+            $scope.displayUL = function() {
+                $scope.li1 = 'here';
+                $scope.li2 = 'is';
+                $scope.li3 = 'u list';
         }
     }]);

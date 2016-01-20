@@ -8,6 +8,10 @@
     </head>
     <body ng-controller="buttonClicksController">
         <button ng-click="displayMessage()">Click here!</button>
+        <h1 class="clickButton" ng-bind="Message"></h1>
+        
+        <button ng-click="displayUL()">Click here for UL</button>
+        <ul class="uList"><li>{{li1}}</li><li>{{li2}}</li><li>{{li3}}</li></ul>
     
     </body>
     
